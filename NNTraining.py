@@ -16,10 +16,10 @@ setEpochs = 100
 weights = "firsttest.h5"
 
 model = Sequential([
-  Dense(64, activation='sigmoid', input_shape=(arraySize,)),
+  Dense(64, activation='relu', input_shape=(arraySize,)),
   Dense(64, activation='sigmoid'),
   Dense(64, activation='sigmoid'),
-  Dense(2, activation='softmax'),
+  Dense(1, activation='sigmoid'),
 ])
 
 
